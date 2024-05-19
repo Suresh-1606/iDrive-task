@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>iDrive Task</title>
+</head>
+
+<body>
+    <header>
+        <div id="logoDiv">
+            <img id="logo" src="./assets/icons/IDrive_logo_white.svg" alt="logo">
+        </div>
+        <div id="navList">
+            <button class="menu-icon" onclick="toggleMenu()">&#9776;</button>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Careers at IDrive</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div id="contentDiv">
+                <div id="innerContent">
+                    <div id="subHeader">
+                        <p style="color: white;font-size: 25px;">IDrive Support</p>
+                    </div>
+                    <div id="bannerDiv">
+                        <div id="subbannerDivs">
+                            <div>
+                                <div>
+                                    <p id="enquiry">if you have any questions, reach out to us here:</p>
+                                    <div id="countrySection">
+                                        <div id="countryDiv">
+                                            <div>
+                                                <p>USA</p>
+                                                <span>1 855 815 8706</span>
+                                            </div>
+                                            <p
+                                                style="border-left: 1px dashed rgb(179, 174, 174);margin-right: 20px;height: 50px;">
+                                            </p>
+                                            <div>
+                                                <p>Uk</p>
+                                                <span>44 20 81062995</span>
+                                            </div>
+                                            <p
+                                                style="border-left: 1px dashed rgb(179, 174, 174);margin-right: 20px;height: 50px;">
+                                            </p>
+                                            <div>
+                                                <p>Other Countries</p>
+                                                <span>1 818 485 4333</span>
+                                            </div>
+                                        </div>
+                                        <div id="customareCare">
+                                            <p>Techinal support: available 24/7 -call us anytime!</p>
+                                            <p style="border-left: 1px solid black;margin-left: 30px;"></p>
+                                            <p style="margin-left: 10px ;">Billing and sales: Monday -
+                                                Friday,6:00 AM to 6:00 Pm PST</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="department">
+                                <div id="departmentContent">
+                                    <p>Department Extensions</p>
+                                    <span>Support: Dail 1</span><br>
+                                    <span>Sales:Dail 2</span><br>
+                                    <span>Billing Enquiries:Dail
+                                        3</span>
+                                </div>
+                                <p style="border-left: 1px dashed rgb(179, 174, 174);margin-right: 20px;height: 80px;">
+                                </p>
+
+                                <div id="ResellerDiv">
+                                    <p>Resellers</p>
+                                    <span>1-855-410-2116 ext 2</span><br>
+                                    <span style="font-size: 11px;">Monday-Friday,6:00 AM to 6:00 PM PST</span>
+                                </div>
+                            </div>
+
+                            <div id="itSupport">
+                                <p>In case if you are unable to reach us on extension for a particular department,dail
+                                    the other
+                                    extension.you <br>cal aslo contact us via email at <span
+                                        style="color: rgb(74, 181, 216);">support@idrive.com</span> ,live
+                                    chat(available 24/7).
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <img id="itImage" src="./assets/icons/istockphoto.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="space" style="height: 150px;"></div>
+            <div id="formDiv" style="width: 100%;background-color: #f5f8fb;padding: 40px 0px;">
+                <div id="secondSection" style="width: 70%;margin: auto;">
+                    <div class="tabs">
+                        <button class="tab-button active" style="background-color: white;color: rgb(74, 181, 216);"
+                            onclick="openTab(event, 'IDriveUser')">IDrive User</button>
+                        <button class="tab-button" onclick="openTab(event, 'IDriveReseller')">IDrive Reseller</button>
+                        <button class="tab-button" onclick="openTab(event, 'IDriveBulkReseller')">IDrive Bulk
+                            Reseller</button>
+                    </div>
+                    <div class="form-container">
+                        <form id="myForm">
+                            <div id="formField" style="display: flex;justify-content: space-between;">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" id="username" name="username" required>
+                                </div>
+                            </div>
+                            <div id="formField"  style="display: flex;justify-content: space-between;">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="os">Operating System</label>
+                                    <select id="os" name="os" required>
+                                        <option value="">Select</option>
+                                        <option value="Windows">Windows</option>
+                                        <option value="MacOS">MacOS</option>
+                                        <option value="Linux">Linux</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="formField"  style="display: flex;justify-content: space-between;">
+                                <div class="form-group">
+                                    <label for="browser">Browser</label>
+                                    <select id="browser" name="browser" required>
+                                        <option value="">Select</option>
+                                        <option value="Chrome">Chrome</option>
+                                        <option value="Firefox">Firefox</option>
+                                        <option value="Safari">Safari</option>
+                                        <option value="Edge">Edge</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="program">Program Used</label>
+                                    <select id="program" name="program" required>
+                                        <option value="">Select</option>
+                                        <option value="MS Office">MS Office</option>
+                                        <option value="Google Docs">Google Docs</option>
+                                        <option value="Adobe Photoshop">Adobe Photoshop</option>
+                                        <option value="Visual Studio Code">Visual Studio Code</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div id="textBox" class="form-group" style="width: 100%;">
+                                <label for="description">Description of the Problem/Questions/Comments</label>
+                                <textarea style="width: 100%;" id="description" name="description" rows="4"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Report To Tech Supports</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="resorcesDiv">
+                <div id="respurceContent">
+                    <div id="Resourceheader">
+                        <h5>Resources</h5>
+                        <div>
+                            <ul>
+                                <li>Video Tutorilas</li>
+                                <li>DataSheet</li>
+                            </ul>
+                            <ul>
+                                <li>WhitePaper</li>
+                                <li>Safe Sender</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="Resourceheader">
+                        <h5>FAQs</h5>
+                        <div>
+                            <ul>
+                                <li>Windows</li>
+                                <li>Mac</li>
+                            </ul>
+                            <ul>
+                                <li>Linux</li>
+                                <li>Mobile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <div id="fourthDiv">
+                <div id="footerDiv">
+                    <div>
+                        <img src="./assets/icons/IDrive_logo_white.svg" alt="">
+                        <ul>
+                            <li>Sign up</li>
+                            <li>Features</li>
+                            <li>Download</li>
+                            <li>Price plans</li>
+                            <li>Security</li>
+                            <li>Educational Offer</li>
+                            <li>Blog</li>
+                            <li>IDrive Vs Competation</li>
+                        </ul>
+                        <h3 style="color: white;">NAS Backup</h3>
+                        <ul>
+                            <li>Synology Backup</li>
+                            <li>QNAP Backup</li>
+                            <li>Netgear Backup</li>
+                            <li>Asustor Backup</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: white;">Products</h3>
+                        <ul>
+                            <li>iphone,ipad,Android Backup</li>
+                            <li>Linux Backup</li>
+                            <li>idrive BMR</li>
+                            <li>Disk clone</li>
+                        </ul>
+                        <h3 style="color: white;">Server Cloud Backup</h3>
+                        <ul>
+                            <li>
+                                SQL server
+                            </li>
+                            <li>Exchange Server</li>
+                            <li>VMware</li>
+                            <li>Hype-v</li>
+                            <li>Share Point Server</li>
+                            <li>Oracle Server</li>
+                            <li>Microsoft 365</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: white;">Features</h3>
+                        <ul>
+                            <li>Multiple Device Online Backup</li>
+                            <li>Small Businesses</li>
+                            <li>Manage Computers Via Web</li>
+                            <li>Snapshots</li>
+                            <li>True Archiving</li>
+                            <li>iDrive Backtrack</li>
+                        </ul>
+                        <h3 style="color: white;">Services</h3>
+                        <ul>
+                            <li>Reseelers</li>
+                            <li>iDrive Express</li>
+                            <li>Business Compliance</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: white;">Resourses</h3>
+                        <ul>
+                            <li>Support</li>
+                            <li>FAQs</li>
+                            <li>Video Tutorials</li>
+                            <li>Corparate</li>
+                            <li>iDrive ventures</li>
+                            <li>Press Releases</li>
+                            <li>Reviews</li>
+                            <li>Legal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="regisetrId">
+                <div id="lastLine">
+                    <p style="color: rgba(139, 135, 135, 0.817);font-size: 12px;margin-left: 15px;">@iDrive Inc.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
